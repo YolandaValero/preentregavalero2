@@ -20,10 +20,9 @@ const DetailItems = () => {
     
     return(
         <div className="detailItems">
+            <>
             <div className="containerIz">
-                <Image 
-                    img= {datos.img}
-                />
+                <Image img= {datos.img}/>
             </div>  
 
             <div className="containerDer">
@@ -41,6 +40,7 @@ const DetailItems = () => {
                     txt="Agregar al carrito"
                 />
             </div>
+            </>
         </div>
     )
 }

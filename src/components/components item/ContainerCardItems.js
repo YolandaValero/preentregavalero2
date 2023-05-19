@@ -16,7 +16,7 @@ const ContainerCardItems = () => {
             FetchSimulation(Products, 1000)
             .then(respond => setDatos(respond))
         } else{
-            FetchSimulation(Products.filter(filter => filter.type === idCategory), 1000)
+            FetchSimulation(Products.filter((filter) => filter.type === idCategory), 1000)
             .then(respond => setDatos(respond))
         }
     }, [idCategory])
@@ -24,15 +24,16 @@ const ContainerCardItems = () => {
     return(
         <div className="containerCardItems">
             {
-                datos.map(product => (
+                datos.map((product) => (
                     <CardItem
                         id={product.id}
                         key={product.id}
                         img={product.img}
                         title={product.name}
-                        description={product.description}
                         cantidad={product.stock}
                         precio={product.price}
+                        description={product.description}
+
                     />
                 ))
             }
