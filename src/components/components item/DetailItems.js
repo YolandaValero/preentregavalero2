@@ -14,7 +14,7 @@ const DetailItems = () => {
     useEffect(() => {
         setDatos([])
 
-        fetchSimulation(Productos.filter( flt => flt.id == idItem), 1000)
+        fetchSimulation(Productos.filter( flt => flt.id === idItem), 1000)
         .then(respond => setDatos(respond))
     }, [idItem])
     
