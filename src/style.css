@@ -21,10 +21,11 @@ header .containerMilo{
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 header .containerMilo img{
-    transform: scale(1.8);
+    transform: scale(0.8);
     cursor: pointer;
 }
 
@@ -39,13 +40,13 @@ header .containerItemList{
 header .containerItemList ul{
     list-style: none;
     display: flex;
-    margin: 0;
+    margin: 12px;
     justify-content: flex-end;
     font-size: larger;
 }
 
 header .containerItemList ul li{
-    margin: 10px;
+    margin: 29px;
     color: var(--color-txt-nav);
     font-size: larger;
     cursor: pointer;
@@ -82,8 +83,10 @@ header .containerCart .containerLength .numCart{
     left: 27%;
     border-radius: 50%;
     font-size: larger;
-
-
 }
 
+a:-webkit-any-link {
+    color: white;
+    text-decoration: none;
+}
 

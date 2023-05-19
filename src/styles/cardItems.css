@@ -18,11 +18,12 @@
 .cardItems .cardImg{
     height: 50%;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    overflow: hidden;    
 }
 
 .cardItems .cardImg img{
-    width: 100%;
+    width: 80%;
 }
 
 .cardDescription{
