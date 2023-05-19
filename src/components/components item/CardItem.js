@@ -11,9 +11,10 @@ const CardItem = (props) => {
             <Image 
             img={props.img}
             />
-            <Description 
+            <Description
                 title= {props.name}
                 cantidad= {props.cantidad}
+                description= {props.description}
                 precio= {props.price}
             />
             <div className="buttons">

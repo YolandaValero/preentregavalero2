@@ -26,9 +26,11 @@ const ContainerCardItems = () => {
             {
                 datos.map(product => (
                     <CardItem
+                        id={product.id}
                         key={product.id}
                         img={product.img}
                         title={product.name}
+                        description={product.description}
                         cantidad={product.stock}
                         precio={product.price}
                     />

@@ -8,45 +8,39 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const DetailItems = () => {
-    const [ datos, setDatos ] = useState([]);
+    const [ datos, setDatos ] = useState({});
     const { idItem } = useParams();
     
     useEffect(() => {
         setDatos([])
 
-        fetchSimulation(Productos.filter( flt => flt.id === idItem), 1000)
+        fetchSimulation(Productos.find((flt) => flt.id === parseInt(idItem)), 1000)
         .then(respond => setDatos(respond))
     }, [idItem])
     
     return(
         <div className="detailItems">
-            {
-                datos.map( items => (
-                    <>
-                        <div className="containerIz">
-                            <Image 
-                                imagen={items.img}
-                            />
-                        </div>  
+            <div className="containerIz">
+                <Image 
+                    img= {datos.img}
+                />
+            </div>  
 
-                        <div className="containerDer">
-                            <Description 
-                                title= {items.name}
-                                parrafo= {items.description}
-                                cantidad = {items.stock}
-                                precio={items.price}
-                            />
-                        </div>
+            <div className="containerDer">
+                <Description 
+                    title= {datos.name}
+                    description= {datos.description}
+                    cantidad= {datos.stock}
+                    precio= {datos.price}
+                />
+            </div>
         
-                        <div className="buttons">
+            <div className="buttons">
                         
-                            <ButtonDetalles 
-                                txt="Agregar al carrito"
-                            />
-                        </div>
-                    </>
-                ))
-            }
+                <ButtonDetalles 
+                    txt="Agregar al carrito"
+                />
+            </div>
         </div>
     )
 }
