@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardItems{
+    height: 460px;
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardItems .cardImg{
+    height: 50%;
+    display: flex;
+    justify-content: center;    
+}
+
+.cardItems .cardImg img{
+    width: 100%;
+}
+
+.cardDescription{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+}
+
+.cardDescription .title{
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.cardDescription .description{
+     display: none;
+}
+
+.cardDescription .cantidad{
+    color: black;
+    font-size: 13px;
+    margin: -19px 0;
+    margin-left: 2px;
+}
+
+.cardDescription .precio{
+    color:  rgb(8, 186, 240);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 33px 0;
+}
+
+.buttons{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.buttons #detalles{
+    height: 65%;
+    width: 78%;
+    border-radius: 50px;
+    background-color: rgb(8, 186, 240);
+    color: white;
+    font-size: 21px;
+    border: none;
+}
+
+.buttons #detalles:hover{
+    background-color: rgb(4, 143, 185);;
+}
+
+.buttons #addCart{
+    background-color: rgb(8, 186, 240);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons #addCart img{
+    transform: scale(1.2);
+    
+}
+
+.buttons #addCart:hover{
+    background-color: rgb(4, 143, 185);;
+}
