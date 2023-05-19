@@ -119,3 +119,5 @@ const Products = [
         description: 'Buzo completo; cubre todo el cuerpo, las patitas y tiene capucha con orejitas. Tela corderito estampado o unicolor, ideal para el frío. Variedad de tamaños, colores y telas'
     }
 ]
+
+export default Products

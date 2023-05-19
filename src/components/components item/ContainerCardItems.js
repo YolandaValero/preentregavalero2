@@ -1,13 +1,13 @@
 import CardItem from "./CardItem";
 import FetchSimulation from "../../fetchSimulation"
-import productos from "../../Products"
+import Products from "../../Products"
 import {useState, useEffect} from "react"
 
 const ContainerCardItems = () => {
     const [datos, setDatos] = useState( [] )
 
     useEffect(() => {
-        FetchSimulation(productos, 3000)
+        FetchSimulation(Products, 3000)
         .then(respond => setDatos(respond))
         .catch(error => console.log(error))
     }, [])
