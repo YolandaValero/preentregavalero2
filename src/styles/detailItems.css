@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detailItems {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.detailItems .containerIz {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailItems .containerIz .cardImg {
+    display: flex;
+    justify-content: center;
+}
+
+.detailItems .containerIz Img{
+    width: 50%;
+}
+
+.detailItems .containerDer {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 600px;
+}
+
+.detailItems .containerDer .descriptionItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailItems .containerDer .cardDescription {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 450px   
+}
+
+.detailItems .containerDer .cardDescription .title {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.detailItems .containerDer .cardDescription .description {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.detailItems .containerDer .cardDescription .description .descriptionTitle {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.detailItems .containerDer .cardDescription .description .parrafo {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.detailItems .containerDer .cardDescription .cantidad{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.detailItems .containerDer .cardDescription .precio{
+    color: #5b00fb;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.detailItems .containerDer .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+}
+
+.detailsItem .containerRigth .buttons .addCart{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5b00fb;
+    border-radius: 50px;
+    height: 60px;
+}
+
+.detailItems .containerDer .buttons .addCart span {
+    font-weight: 20px;
+    margin: 0 10px;
+}
+
+.detailItems .containerDer .buttons .addCart div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+
+.detailItems .containerDer .buttons .addCart div #quitar, .detailItem .containerDer .buttons .addCart div #aumentar {
+    background-color: #5b00fb;
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.detailItems .containerDer .buttons #detalles{
+    width: 48%;
+    background-color: #5b00fb;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-size: 21px;
+}

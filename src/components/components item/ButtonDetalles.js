@@ -1,9 +1,9 @@
 const ButtonDetalles = (props) =>{
     return(
-        <button id= "detalles" style={{width: "180%"}}>
+        <button className= "agregar"  id= "detalles">
         {props.txt}
         </button>
     )
 }
-
 export default ButtonDetalles
+

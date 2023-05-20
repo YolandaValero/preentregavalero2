@@ -35,6 +35,7 @@
 .cardDescription .title{
     font-size: 24px;
     margin: 20px 0;
+    margin-bottom: 1px;
 }
 
 .cardDescription .description{
@@ -44,15 +45,14 @@
 .cardDescription .cantidad{
     color: black;
     font-size: 13px;
-    margin: -19px 0;
-    margin-left: 2px;
+    margin-left: 1px;
 }
 
 .cardDescription .precio{
     color:  rgb(8, 186, 240);
     font-size: 40px;
     font-weight: bold;
-    margin: 33px 0;
+    margin: 23px 0;
 }
 
 .buttons{
@@ -63,14 +63,14 @@
     margin-top: 24px;
 }
 
-.buttons #detalles{
-    height: 65%;
-    width: 78%;
+.agregar{
+    height: 46px;
     border-radius: 50px;
     background-color: rgb(8, 186, 240);
     color: white;
     font-size: 21px;
     border: none;
+    width: 219px;
 }
 
 .buttons #detalles:hover{
@@ -95,4 +95,9 @@
 
 .buttons #addCart:hover{
     background-color: rgb(4, 143, 185);;
+}
+
+.parrafo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }

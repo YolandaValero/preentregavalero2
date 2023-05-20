@@ -32,8 +32,6 @@ const ContainerCardItems = () => {
                         title={product.name}
                         cantidad={product.stock}
                         precio={product.price}
-                        description={product.description}
-
                     />
                 ))
             }

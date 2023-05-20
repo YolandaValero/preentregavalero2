@@ -5,13 +5,11 @@ const Description = (props) =>{
                 {props.title}
             </h3>
 
-            <div className="description">
-            <span className="descriptionTitle">Descripción</span>
+            <span className="descriptionTitle"></span>
             <p className="parrafo">
                 {props.description}
             </p>
-            </div>
-            
+
             <span className="cantidad">
                 Cantidad: {props.cantidad}
             </span>
