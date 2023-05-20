@@ -76,7 +76,7 @@
 }
 
 .detailItems .containerDer .cardDescription .precio{
-    color: #5b00fb;
+    color: rgb(8, 186, 240);
     font-weight: bold;
     font-size: 55px;
     margin: 10px 0;
@@ -95,7 +95,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #5b00fb;
+    border: 1px solid rgb(8, 186, 240);
     border-radius: 50px;
     height: 60px;
 }
@@ -115,7 +115,7 @@
 
 
 .detailItems .containerDer .buttons .addCart div #quitar, .detailItem .containerDer .buttons .addCart div #aumentar {
-    background-color: #5b00fb;
+    background-color:rgb(8, 186, 240);
     border: none;
     color: white;
     width: 35px;
@@ -126,7 +126,7 @@
 
 .detailItems .containerDer .buttons #detalles{
     width: 48%;
-    background-color: #5b00fb;
+    background-color: rgb(8, 186, 240);
     border-radius: 50px;
     color: white;
     border: none;

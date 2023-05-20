@@ -13,7 +13,7 @@ const CartWidget = () =>{
     return(
         <div className= "containerLength" onClick={showCart}>
             <img src={cart} alt="carrito"></img>     
-            <span className= "cantidadCart">
+            <span style={{color:"white"}}>
                 {listCart.length}
             </span>
         </div>

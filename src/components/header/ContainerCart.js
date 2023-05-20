@@ -8,9 +8,9 @@ import { listCartContext } from "../components item/ProviderContextListCart";
 
 const ContainerCart = () => {
 
-    const { cartShow, setCartShow} = useContext(controllerShowCart);
     const {listCart, clearCart } = useContext(listCartContext);
-
+    const { cartShow, setCartShow} = useContext(controllerShowCart);
+    
     const style = {
         display: cartShow
     }
@@ -30,14 +30,14 @@ const ContainerCart = () => {
             <div className="containerItemsCart">
                 {
                     (listCart.length === 0 ) ? <span className="emptyCart">Tu carrito está vacío, ¡Vamos a llenarlo!</span>
-                    : listCart.map(producto => ( 
+                    : listCart.map(product => ( 
                         <ItemCart 
-                            key={producto.id}
-                            id={producto.id}
-                            title={producto.title}
-                            image={producto.img}
-                            quantity={producto.quantity}
-                            price={producto.price}
+                            key={product.id}
+                            id={product.id}
+                            title={product.title}
+                            img={product.img}
+                            quantity={product.quantity}
+                            price={product.price}
                         />
                     ))
                 }   
